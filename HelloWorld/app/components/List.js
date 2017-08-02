@@ -1,3 +1,4 @@
+'use strict'
 import React from 'react';
 
 import {
@@ -6,7 +7,8 @@ import {
   View,
   Text,
   Image,
-  Button
+  Button,
+  FlatList
 } from 'react-native';
 
 module.exports = React.createClass({
@@ -21,6 +23,11 @@ module.exports = React.createClass({
         <Text>
           List Screen Example
         </Text>
+
+        <FlatList
+          data={[{key: 'a'}, {key: 'b'}]}
+          renderItem={({item}) => <Text>{item.key}</Text>}
+        />
 
         <Button
           onPress={() => navigate('Detail')}
@@ -42,5 +49,9 @@ var styles = StyleSheet.create({
   image : {
     width: 200,
     height: 200
-  }
+  },
+  icon: {
+    width: 26,
+    height: 26,
+  },
 });
