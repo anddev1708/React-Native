@@ -5,7 +5,8 @@ import {
   StyleSheet,
   View,
   Text,
-  Image
+  Image,
+  TextInput
 } from 'react-native';
 
 module.exports = React.createClass({
@@ -20,8 +21,14 @@ module.exports = React.createClass({
         <Text>
           Details Screen
         </Text>
+
+        <TextInput
+        style={styles.nameInput}
+        onChange={this.onNameChanged}
+        placeholder='Who should be greeted?'/>
+
         <Text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </Text>
       </View>
     );
@@ -40,5 +47,12 @@ var styles = StyleSheet.create({
     height: 200,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  nameInput: {
+    height: 36,
+    padding: 4,
+    margin: 24,
+    fontSize: 18,
+    borderWidth: 1,
   }
 });
