@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "284391383393",
+    "firebase_url": "https://footbal-live-stream.firebaseio.com",
+    "project_id": "footbal-live-stream",
+    "storage_bucket": "footbal-live-stream.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284391383393:android:397ea82c46fb922d",
+        "android_client_info": {
+          "package_name": "com.footballlivestream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284391383393-kcarmlsdqqaui2k9kk9q3dk8tkuss3kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADRTNB5WbtfGpYVMgnYK0tqin6BHF8-qA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
