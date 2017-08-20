@@ -1,0 +1,34 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from 'react';
+import { AppRegistry} from 'react-native';
+import { DrawerNavigator} from 'react-navigation';
+import Icon from "react-native-vector-icons/FontAwesome";
+import tabNav from './app/screens/tabnav';
+
+const drawernav = DrawerNavigator({
+    DrawerItem1: {
+        screen: tabNav,
+        navigationOptions: {
+            drawer: {
+                label: 'Drawer 1',
+                icon: ({ tintColor }) => <Icon name="bars" size={24} />
+            },
+        },
+    },
+    DrawerItem2: {
+        screen: tabNav,
+        navigationOptions: {
+            drawer: {
+                label: 'Drawer 2',
+                icon: ({ tintColor }) => <Icon name="bars" size={24} />
+            },
+        },
+    },
+});
+
+AppRegistry.registerComponent('NavigationExample', () => drawernav);
