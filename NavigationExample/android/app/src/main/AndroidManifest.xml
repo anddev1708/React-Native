@@ -13,6 +13,7 @@
     <application
       android:name=".MainApplication"
       android:allowBackup="true"
+        android:hardwareAccelerated="true"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:theme="@style/AppTheme">
@@ -30,8 +31,10 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="@string/google_api_key" />
+            android:value="AIzaSyDv2Nx_7n1O_pTcLVPdkkT3TWZbNMZayCU" />
 
+        1
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
     </application>
 
 </manifest>

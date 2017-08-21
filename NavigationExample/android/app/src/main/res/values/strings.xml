@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">NavigationExample</string>
-    <string name="google_api_key">AIzaSyDcXkeM0rR4twGY_X-RH-oV9svL6mJMHpY</string>
-
+    <string name="facebook_app_id">149331235651174</string>
 </resources>

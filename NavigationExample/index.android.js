@@ -5,10 +5,11 @@
  */
 
 import React, { Component } from 'react';
-import { AppRegistry} from 'react-native';
+import { AppRegistry, View, Text} from 'react-native';
 import { DrawerNavigator} from 'react-navigation';
 import Icon from "react-native-vector-icons/FontAwesome";
 import tabNav from './app/screens/tabnav';
+import Login from './app/screens/login';
 
 const drawernav = DrawerNavigator({
     DrawerItem1: {
@@ -31,4 +32,18 @@ const drawernav = DrawerNavigator({
     },
 });
 
-AppRegistry.registerComponent('NavigationExample', () => drawernav);
+
+export default class Home extends Component{
+
+
+    render(){
+        return(
+            <View>
+                <Text>Xin chao cac ban !</Text>
+            </View>
+            
+        );
+    }
+}
+
+AppRegistry.registerComponent('NavigationExample', () => Login);
