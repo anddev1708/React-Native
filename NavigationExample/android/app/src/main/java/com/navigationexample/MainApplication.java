@@ -10,6 +10,7 @@ import android.util.Base64;
 import android.util.Log;
 
 import com.airbnb.android.react.maps.MapsPackage;
+import com.brentvatne.react.ReactVideoPackage;
 import com.facebook.CallbackManager;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
@@ -43,6 +44,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactVideoPackage(),
             new FBSDKPackage(mCallbackManager),
             new FirestackPackage(),
             new MapsPackage(),
