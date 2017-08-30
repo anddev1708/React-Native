@@ -11,6 +11,8 @@ export default class AwesomeApp extends Component {
     };
   }
   async componentWillMount() {
+    // Check login state here
+
     this.setState({ isReady: true });
   }
 
