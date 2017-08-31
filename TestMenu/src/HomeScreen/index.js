@@ -9,7 +9,8 @@ const HomeScreenRouter = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
     Chat: { screen: MainScreenNavigator },
-    Profile: { screen: Profile }
+    Profile: { screen: Profile },
+    
   },
   {
     contentComponent: props => <SideBar {...props} />
