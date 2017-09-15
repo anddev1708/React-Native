@@ -1,0 +1,47 @@
+import {StyleSheet} from 'react-native'
+
+export default StyleSheet.create({
+    loginForm: {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        padding: 10px;
+      },
+      
+      form-group: {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      },
+      
+      label: {
+        min-width: 180px;
+        width: 180px;
+        font-weight: bold;
+        font-size: 25px;
+      },
+      
+      input: {
+        box-sizing: border-box;
+        height: 40px;
+        padding: 3px;
+        flex-grow: 1;
+        font-size: 25px;
+      }
+      ,
+      inputSubmit: {
+        align-self: flex-end;
+        width: 100px;
+        height: 50px;
+        border: 3px solid lightgray;
+        border-radius: 5px;
+        font-size: 20px;
+        background: white;
+      },
+      
+      message : {
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: right;
+      }
+});
