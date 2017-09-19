@@ -61,7 +61,7 @@ class Start extends Component {
 
   loadTodo(){
       console.log('try to load todo');
-      this.props.dispatch(actionCreators.loadTodo());
+      this.props.dispatch(actionCreators.fetchData());
   }
 
   render() {
@@ -101,11 +101,6 @@ class Start extends Component {
   }
 }
 
-
-function mapStateToProps(state) {
-  return { todos: state.todos };
-}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -123,4 +118,15 @@ const styles = StyleSheet.create({
   },
 });
 
-export default connect(mapStateToProps)(Start);
+
+function mapStateToProps(state) {
+  return { todos: state.todos };
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    fetchData: () => dispatch(fetchData())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Start);

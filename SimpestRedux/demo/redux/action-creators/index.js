@@ -39,8 +39,29 @@ export const loadTodoSuccess = (todos) => {
   }
 };
 
+// Load data failed
+export const loadTodoFailed = () => {
+  return {
+    type: 'LOAD_TODO_FAILED'
+  }
+};
+
+// Begin load to do
 export function loadTodo(){
   return {
     type: 'LOAD_TODO',
+  }
+}
+
+export function fetchData() {
+  return (dispatch) => {
+    dispatch(loadTodo());
+    let realm =  Realm.open({schema: [TodoSchema]})
+    .then(realm => { 
+       let todos = realm.objects('ToDo');
+       console.log('ToDo size = '+todos.length);
+       // get first 5 Car objects
+       loadTodoSuccess(todos);
+    }); 
   }
 }
