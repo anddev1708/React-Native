@@ -1,0 +1,9 @@
+export const ADD_TODO = 'ADD_TODO';
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
+export const TOGGLE_TODO = 'TOGGLE_TODO';
+export const DELETE_TODO = 'DELETE_TODO';
+
+
+export const LOAD_TODO = 'LOAD_TODO';
+export const LOAD_TODO_SUCCESS = 'LOAD_TODO_SUCCESS';
+export const LOAD_TODO_FAILED = 'LOAD_TODO_FAILED';
